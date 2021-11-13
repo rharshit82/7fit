@@ -4,7 +4,11 @@ import './Banner.css'
 function Banner() {
     return (
         <div className="banner">
-            <div className="" />
+            <div className="bannersec">
+                <div className="headingban">
+                    <h1>HackFit</h1>
+                </div>
+            </div>
         </div>
     )
 }
