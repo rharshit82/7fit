@@ -6,7 +6,8 @@ function Banner() {
         <div className="banner">
             <div className="bannersec">
                 <div className="headingban">
-                    <h1>HackFit</h1>
+                    <h1>7Fit</h1>
+                    <p>Fitness hack for HackFit</p>
                 </div>
             </div>
         </div>

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { LinkContainer } from "react-router-bootstrap";
-import { Card, Button } from "react-bootstrap";
-import "./CSS/Wallscreens.css";
+import "./WallScreen.css";
 
 const WallScreen = () => {
   useEffect(() => {

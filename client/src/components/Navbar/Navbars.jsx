@@ -3,7 +3,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import Button from "@material-ui/core/Button";
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Header.css";
-
+import { LinkContainer } from "react-router-bootstrap";
 const Navbars = () => {
   const [Active, setActive] = useState(false);
   const [show, setShow] = useState(false);
@@ -23,13 +23,16 @@ const Navbars = () => {
             </Button>
 
          <ul>
+           <LinkContainer to='/upload'>
             <li className="navlinks">
-              Link1
+              Upload
             </li>
-            
+            </LinkContainer>
+            <LinkContainer to='/wall'>
             <li className="navlinks">
-              Link2
+              Wall
             </li>
+            </LinkContainer>
             <li className="navlinks">
               Link3
             </li>

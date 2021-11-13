@@ -11,7 +11,9 @@ exports.uploadImage = (req,res) =>{
     const newUserData = {
         name,photo,description,date,location
     }
+
     const newUser = new User(newUserData);
+
     newUser.save()
            .then(() => res.json('User Added'))
            .catch(err => res.status(400).json('Error: ' + err));
@@ -36,7 +38,15 @@ exports.wallData = async (req,res) =>{
     }
     
 }
-
+exports.clean = async(req,res) =>{
+    try{
+        const id = req.params.id
+        let upd = await User.findOneAndUpdate({_id: id}, {isClean: true});
+        res.status(200).send("Updated")
+    } catch(err){
+        res.status(404).send("Not Found")
+    }
+}
 exports.upvote = async(req,res) =>{
     try{
         const id = req.params.id
@@ -62,30 +72,30 @@ exports.addPost = async (req,res) =>{
       }
     )
   }
-//   exports.fetchPosts = async (req,res) =>{
+  exports.fetchPosts = async (req,res) =>{
       
-//     try {
-//       const posts = await Post.find({}).sort({ createdAt: -1 })
-//       // console.log(posts)
-//       return res.status(201).send(posts)
-//     } catch (err) {
-//       return res.status(404).json({ message: 'No Post Found' })
-//     }
-//   }
+    try {
+      const posts = await Post.find({}).sort({ createdAt: -1 })
+      // console.log(posts)
+      return res.status(201).send(posts)
+    } catch (err) {
+      return res.status(404).json({ message: 'No Post Found' })
+    }
+  }
 
-//   exports.sendmsg = async (req,res) =>{
-//   const accountSid = process.env.accountSid;
-//   const authToken = process.env.authToken;
-//   const client = require('twilio')(accountSid, authToken);
-//   const {phone,message}= req.body;
-//   client.messages
-//   .create({
-//      body: message,
-//      from: '+15187206078',
-//      to: phone
-//    })
-//   .then(message =>{
-//     console.log(message)
-//     res.status(200).send("Message sent")
-//   } );
-//   }
+  exports.sendmsg = async (req,res) =>{
+  const accountSid = process.env.accountSid;
+  const authToken = process.env.authToken;
+  const client = require('twilio')(accountSid, authToken);
+  const {phone,message}= req.body;
+  client.messages
+  .create({
+     body: message,
+     from: '+15187206078',
+     to: phone
+   })
+  .then(message =>{
+    console.log(message)
+    res.status(200).send("Message sent")
+  } );
+  }
