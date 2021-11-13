@@ -9,11 +9,11 @@
    padding: 5px 10px;
    font-size: 2rem;
    display: inline-block;
-   border-bottom: 2px solid rgba(55, 148, 49,0.9);
+   border-bottom: 2px solid black;
 }
 
 .Imagehead h1:hover{
-    border-bottom: 2px solid rgba(55, 148, 49,0.9);
+    border-bottom: 2px solid black;
 }
 
 
@@ -32,7 +32,7 @@
 }
 
 .titlehead p:hover{
-    border-bottom: 2px solid rgba(55, 148, 49,0.9);
+    border-bottom: 2px solid black;
 }
 
 .titleinp {

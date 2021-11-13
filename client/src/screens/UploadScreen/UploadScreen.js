@@ -52,7 +52,7 @@ const UploadScreen = () => {
       </div>
 
       <form onSubmit={handleSubmit} encType="multipart/form-data">
-        <div className="container-fluid Formss ">
+        <div className="container-fluid Formss">
           <div className=" my-2 py-1 ">
             <div className="row titlebox">
               <div className="col-lg-6 col-sm-6  text-center titlehead">
