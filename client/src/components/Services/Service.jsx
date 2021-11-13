@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 
 function Service() {
   return (
-    <div className="my-5 Service container">
+    <div className="py-5 Service container">
       <div className="Serviceban">
         <h1>Unique Feature</h1>
 
