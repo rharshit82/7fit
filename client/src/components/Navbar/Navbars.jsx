@@ -30,7 +30,7 @@ const Navbars = () => {
             </LinkContainer>
             <LinkContainer to='/wall'>
             <li className="navlinks">
-              Wall
+             FitWall
             </li>
             </LinkContainer>
             <li className="navlinks">
