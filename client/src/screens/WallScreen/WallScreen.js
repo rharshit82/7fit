@@ -19,51 +19,64 @@ const WallScreen = () => {
   const [data, setData] = useState([]);
   return (
     <div className="container ">
-      <h2 className="container appreaciate text-center my-5">
-        Progress Wall
-      </h2>
-      {data !== null ? (
-        data.map((post) => {
-          return (
-            <>
-              <LinkContainer to={`/images/${post._id}`}>
-                <div className="container my-5 wallbox ">
-                  <div className="row">
-                    <div className="col-sm-12 postname">
-                      <p>{post.name}</p>
-                    </div>
-                    <div className="col-sm-12 postdate">
-                      <p>
-                        Posted On <span className="spanpost">{post.date}</span>
-                      </p>
-                    </div>
+      <h2 className="container appreaciate text-center my-5">Progress Wall</h2>
 
-                    <div className="col-sm-12 postdesc">
-                      <p>{post.description}</p>
-                    </div>
-                    <div className="col-sm-12 postdesc">
-                      <p>Location: {post.location}</p>
-                    </div>
+      <div className="container">
+        <div className="row">
+          {data !== null ? (
+            data.map((post) => {
+              return (
+                <>
+                  <LinkContainer to={`/images/${post._id}`}>
+                    <div className="col-lg-6 col-sm-12 my-5 px-5  wallbox ">
+                      <div className="wallbox1 p-3 ">
+                        <div className="row">
+                        <div className="col-sm-12 postname">
+                          <p>{post.name}</p>
+                        </div>
+                        <div className="col-sm-12 postdate">
+                          <p>
+                            Posted On{" "}
+                            <span className="spanpost">{post.date}</span>
+                          </p>
+                        </div>
 
-                    <div className="upvotes my-3">
-                      <p>Upvoted By &nbsp; <span>{post.upVotes}</span></p>
-                    </div>
-                    <div className="col-sm-12 postdesc">
-                      {post.isClean? (<p>The Place is Cleaned</p> ): <p>The Place is not Cleaned yet</p>}
-                    </div>
+                        <div className="col-sm-12 postdesc">
+                          <p>{post.description}</p>
+                        </div>
+                        <div className="col-sm-12 postdesc">
+                          <p>Location: {post.location}</p>
+                        </div>
 
-                    <div className=" container text-center">
-                      <p className="buttonwall">Click To watch the Image !!!!</p>
+                        <div className="upvotes my-3">
+                          <p>
+                            Upvoted By &nbsp; <span>{post.upVotes}</span>
+                          </p>
+                        </div>
+                        <div className="col-sm-12 postdesc">
+                          {post.isClean ? (
+                            <p>The Place is Cleaned</p>
+                          ) : (
+                            <p>The Place is not Cleaned yet</p>
+                          )}
+                        </div>
+                        <div className=" container text-center">
+                          <p className="buttonwall">
+                            Click To watch the Image !!!!
+                          </p>
+                        </div>
+                      </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </LinkContainer>
-            </>
-          );
-        })
-      ) : (
-        <h3>Loading</h3>
-      )}
+                  </LinkContainer>
+                </>
+              );
+            })
+          ) : (
+            <h3>Loading</h3>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,18 +1,22 @@
 .appreaciate{
     padding: 5px 10px;
-    border-bottom: 2px solid rgba(55, 148, 49,0.9);
+    border-bottom: 2px solid rgba(20, 20, 20, 0.9);
 }
 
 .wallbox{
-    width: 80%;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem;     
+}
+
+.wallbox1{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
     position: relative;
-}
+    background-color:white;
 
-.wallbox:hover{
-    background-color: rgba(55, 148, 49,0.3);
+}
+.wallbox1:hover{
+    background-color: rgb(19, 17, 17);
+    color: white;
 }
 
 .postname p{
@@ -54,9 +58,15 @@
 
 .upvotes p{
     display: inline-block;
-    background-color: rgba(39, 100, 35, 0.8);
+    background-color: black ;
     padding: 0.5rem 1rem;
     border-radius:10px;
+    color: white;
+}
+
+.upvotes p:hover{
+    background-color: white;
+    color: black;
 }
 
 .upvotes p span{    
