@@ -38,6 +38,11 @@ const Navbars = () => {
               Blog
             </li>
             </LinkContainer>
+            <LinkContainer to='/challenge'>
+            <li className="navlinks">
+              Challenge Your Friend
+            </li>
+            </LinkContainer>
             
            
          </ul>  

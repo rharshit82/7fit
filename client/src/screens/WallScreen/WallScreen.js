@@ -45,7 +45,13 @@ const WallScreen = () => {
                           <p>{post.description}</p>
                         </div>
                         <div className="col-sm-12 postdesc">
-                          <p>Location: {post.location}</p>
+                          <p>Weight : {post.weight}</p>
+                        </div>
+                        <div className="col-sm-12 postdesc">
+                          <p>Height : {post.height}</p>
+                        </div>
+                        <div className="col-sm-12 postdesc">
+                          <p>Age : {post.age}</p>
                         </div>
 
                         <div className="upvotes my-3">
@@ -53,13 +59,7 @@ const WallScreen = () => {
                             Upvoted By &nbsp; <span>{post.upVotes}</span>
                           </p>
                         </div>
-                        <div className="col-sm-12 postdesc">
-                          {post.isClean ? (
-                            <p>The Place is Cleaned</p>
-                          ) : (
-                            <p>The Place is not Cleaned yet</p>
-                          )}
-                        </div>
+                        
                         <div className=" container text-center">
                           <p className="buttonwall">
                             Click To watch the Image !!!!

@@ -6,13 +6,11 @@ const Post = ({ posts }) => {
     <>
       <div className="container mainpost">
         <div className="text-center">
-          <h1 className=" text-center my-3">Environment Blog</h1>
+          <h1 className=" text-center my-3">Fitness Articles</h1>
         </div>
         <p className="mainp">
           {" "}
-          Let us Collaborate and share how we can save the environment on an
-          Individual level. Projects, Articles, DIYs or anything else is
-          welcome.
+          Share your Transformation stories or Fitness articles ! Anything you like :)
         </p>
         <div className="Postss container my-2 ">
           {posts.map((post) => (

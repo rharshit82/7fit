@@ -41,7 +41,7 @@ const ImageScreen = () => {
         {isClean?
         <img className="d-block mx-auto" src={goodjob} />: 
         <div>
-        <Button variant="dark" className="d-block mx-auto my-5" onClick={cleanUpdate}>The Place is Clean</Button>
+        <Button variant="dark" className="d-block mx-auto my-5" onClick={cleanUpdate}>Are you working out daily?</Button>
         </div>
         }
         

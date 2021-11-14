@@ -7,9 +7,11 @@ exports.uploadImage = (req,res) =>{
     const description = req.body.description;
     const date=req.body.date;
     const photo = req.file.filename;
-    const location=req.body.location
+    const weight=req.body.weight;
+    const height=req.body.height;
+    const age=req.body.age
     const newUserData = {
-        name,photo,description,date,location
+        name,photo,description,date,weight,height,age
     }
 
     const newUser = new User(newUserData);

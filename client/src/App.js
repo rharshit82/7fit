@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import ImageScreen from './screens/ImageScreen/ImageScreen';
 import BlogScreen from './screens/BlogScreen/BlogScreen';
 import AddPostScreen from './screens/AddPostScreen/AddPostScreen';
+import ChallengeYourFriend from "./screens/ChallengeYourFriend/ChallengeYourFriend";
 function App() {
   return (
     <div className="App">
@@ -23,7 +24,9 @@ function App() {
             <Route exact path="/wall" component={() => <WallScreen />} />
             <Route exact path='/images/:id' component={() => <ImageScreen />} />
             <Route exact path='/addpost' component={() => <AddPostScreen />} />
-            <Route exact path='/blog' component={() => <BlogScreen />} />          
+            <Route exact path='/blog' component={() => <BlogScreen />} />     
+            <Route exact path='/challenge' component={() => <ChallengeYourFriend />} />     
+
           </Switch>
         </main>
         <Footer />

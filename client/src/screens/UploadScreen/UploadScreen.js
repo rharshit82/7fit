@@ -9,7 +9,9 @@ const UploadScreen = () => {
     photo: "",
     description: "",
     date: "",
-    location:""
+    age:"",
+    weight: "",
+    height: ""
   });
   const [isSubmit,setIsSubmit] = useState(false);
 
@@ -21,7 +23,9 @@ const UploadScreen = () => {
     formData.append("date", newUser.date);
     formData.append("name", newUser.name);
     formData.append("description", newUser.description);
-    formData.append("location",newUser.location)
+    formData.append("weight",newUser.weight)
+    formData.append("height",newUser.height)
+    formData.append("age",newUser.age)
 
     axios
       .post("/api/upload/", formData)
@@ -90,14 +94,50 @@ const UploadScreen = () => {
           <div className="container my-5">
             <div className="row">
               <div className="col-lg-6 col-sm-6 titledesc text-center">
-                <p>Location</p>
+                <p>height</p>
               </div>
               <div className="col-lg-6 col-sm-6 titleinp px-0">
                 <textarea
                   type="text"
-                  name="location"
-                  value={newUser.location}
-                  placeholder="Enter Location"
+                  name="height"
+                  value={newUser.height}
+                  placeholder="Enter Height"
+                  onChange={handleChange}
+                  rows="3"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="container my-5">
+            <div className="row">
+              <div className="col-lg-6 col-sm-6 titledesc text-center">
+                <p>weight</p>
+              </div>
+              <div className="col-lg-6 col-sm-6 titleinp px-0">
+                <textarea
+                  type="text"
+                  name="weight"
+                  value={newUser.weight}
+                  placeholder="Enter weight"
+                  onChange={handleChange}
+                  rows="3"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="container my-5">
+            <div className="row">
+              <div className="col-lg-6 col-sm-6 titledesc text-center">
+                <p>age</p>
+              </div>
+              <div className="col-lg-6 col-sm-6 titleinp px-0">
+                <textarea
+                  type="text"
+                  name="age"
+                  value={newUser.age}
+                  placeholder="Enter age"
                   onChange={handleChange}
                   rows="3"
                 />
@@ -108,7 +148,7 @@ const UploadScreen = () => {
           <div className="container my-5">
             <div className="row">
               <div className="col-lg-6 col-sm-6 text-center uploadate">
-                <p> Date Of Report </p>
+                <p> Date of Image </p>
               </div>
               <div className="col-lg-6 col-sm-6 text-center">
                 <input

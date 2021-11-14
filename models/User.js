@@ -18,17 +18,20 @@ const userSchema = new Schema({
     date: {
         type: String
     },
-    location:{
+    weight:{
         type:String,
+    },
+    height:{
+        type:String,
+    },
+    age:{
+        type:Number,
     },
     upVotes:{
         type:Number,
         default: 0
     },
-    isClean:{
-        type: Boolean,
-        default: false,
-    }
+    
 });
 
 const User = mongoose.model('User', userSchema);
