@@ -20,8 +20,8 @@ const WallScreen = () => {
   return (
     <div className="container ">
       <div className="text-center container">
-      <h2 className="appreaciate">Progress Wall</h2><br/>
-      <p className="appreaciatep ">Showcase your work and motivate others.</p>
+      <h2 className="appreaciate">FitWall</h2><br/>
+      <p className="appreaciatep ">Showcase your transformation journey and motivate others.</p>
        </div>
       <div className="container">
         <div className="row">
