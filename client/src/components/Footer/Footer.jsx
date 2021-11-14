@@ -29,11 +29,13 @@ function Footer() {
           </div>
           <div className="col-sm-3">
             <ul>
-              <li><h4>Contact Us</h4></li>
-              <li className="footer-icon-box"><i className="fa fa-envelope fa-1x footer-icon fa-inverse" aria-hidden="true"></i><a href='mailto:abc@gmail.com'>abc@gmail.com</a></li>
-              <li className="footer-icon-box"><i className="fa fa-phone fa-1x footer-icon fa-inverse" aria-hidden="true"></i><a href='tel:9876543210'>9876543210</a></li>
-              <li className="footer-icon-box"><i className="fa fa-map-marker fa-1x footer-icon fa-inverse" aria-hidden="true"></i><a href='!#'>Ghaziabad</a></li>
-              <li className="footer-icon-box2 text-center">If you have any queries feel free to Contact us !!!!</li>
+              <li><h4>What Stops people?</h4></li>
+              <li>Factors like</li>
+              <li className="footer-icon-box"><i className="fa fa-envelope fa-1x footer-icon fa-inverse" aria-hidden="true"></i>lack of time</li>
+              <li className="footer-icon-box"><i className="fa fa-phone fa-1x footer-icon fa-inverse" aria-hidden="true"></i>social influence</li>
+              <li className="footer-icon-box"><i className="fa fa-map-marker fa-1x footer-icon fa-inverse" aria-hidden="true"></i>lack of energy</li>
+              <li className="footer-icon-box"><i className="fa fa-map-marker fa-1x footer-icon fa-inverse" aria-hidden="true"></i>lack of willpower</li>
+              <li className="footer-icon-box2 text-center">Fitness made easy with 7Fit</li>
             </ul>
           </div>
         </div>
@@ -51,7 +53,7 @@ function Footer() {
 <div className="row footer-copyright">
 
   <div className="col-sm-6 footer-copyright-text">
-      <i className="fa fa-copyright" aria-hidden="true"></i> DinoMatric <span className="small"> | </span> <a href="!#" rel="nofollow">Terms</a><span className="small"> | </span><a href="/privacy-policy.html"  rel="nofollow">Privacy</a>
+      <i className="fa fa-copyright" aria-hidden="true"></i> <span className="small">  </span> <a href="!#" rel="nofollow">Terms</a><span className="small"> | </span><a href="/privacy-policy.html"  rel="nofollow">Privacy</a>
   </div>
 
   <div className="col-sm-6 footer-copyright-text2">

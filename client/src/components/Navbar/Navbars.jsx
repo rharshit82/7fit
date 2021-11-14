@@ -40,7 +40,7 @@ const Navbars = () => {
             </LinkContainer>
             <LinkContainer to='/challenge'>
             <li className="navlinks">
-              Challenge Your Friend
+              Challenge Friend
             </li>
             </LinkContainer>
             <LinkContainer to='/motivation'>
