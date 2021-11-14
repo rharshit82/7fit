@@ -40,15 +40,7 @@ exports.wallData = async (req,res) =>{
     }
     
 }
-exports.clean = async(req,res) =>{
-    try{
-        const id = req.params.id
-        let upd = await User.findOneAndUpdate({_id: id}, {isClean: true});
-        res.status(200).send("Updated")
-    } catch(err){
-        res.status(404).send("Not Found")
-    }
-}
+
 exports.upvote = async(req,res) =>{
     try{
         const id = req.params.id
