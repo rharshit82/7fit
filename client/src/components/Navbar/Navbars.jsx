@@ -33,18 +33,12 @@ const Navbars = () => {
              FitWall
             </li>
             </LinkContainer>
+            <LinkContainer to='/blog'>
             <li className="navlinks">
-              Link3
+              Blog
             </li>
-            <li className="navlinks">
-              Link4
-            </li>
-            <li className="navlinks">
-              Link5
-            </li>
-            <li className="navlinks">
-              Link6
-            </li>
+            </LinkContainer>
+            
            
          </ul>  
 
