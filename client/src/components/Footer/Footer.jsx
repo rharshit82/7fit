@@ -24,7 +24,7 @@ function Footer() {
               <li><a href="!#">Home</a></li>
               <li><a href="!#">Upload</a></li>
               <li><a href='!#'>FitWall</a></li>
-              <li><a href='!#'>Dino Blogs</a></li>
+              <li><a href='!#'>Challenge your friend</a></li>
             </ul>
           </div>
           <div className="col-sm-3">

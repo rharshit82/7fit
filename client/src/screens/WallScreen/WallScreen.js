@@ -19,8 +19,10 @@ const WallScreen = () => {
   const [data, setData] = useState([]);
   return (
     <div className="container ">
-      <h2 className="container appreaciate text-center my-5">Progress Wall</h2>
-
+      <div className="text-center container">
+      <h2 className="appreaciate">Progress Wall</h2><br/>
+      <p className="appreaciatep ">Showcase your work and motivate others.</p>
+       </div>
       <div className="container">
         <div className="row">
           {data !== null ? (

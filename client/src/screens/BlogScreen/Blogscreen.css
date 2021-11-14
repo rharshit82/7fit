@@ -1,8 +1,9 @@
 .addpostss{
-    background-color:rgba(55, 148, 49,0.9);
+    background-color:black;
     padding: 0.5rem 2rem;
     font-size: 1.5rem;
     border-radius: 25px;
+    color: white;
 }
 
 .posts{
@@ -21,7 +22,7 @@
 .mainpost h1{
     display:inline-block;
     text-align: center;
-    border-bottom: 2px solid rgba(55, 148, 49, 0.5) ;
+    border-bottom: 2px solid black ;
     padding: 0.5rem 2rem;
 }
 
@@ -33,7 +34,8 @@
 
 .postid{
     width: 80%;
-    background-color:rgba(55, 148, 49, 0.4);
+    background-color:rgba(0, 0, 0, 0.8);
     padding: 2rem 3rem;
     border-radius: 15px;
+    color: white;
 }

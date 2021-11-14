@@ -1,6 +1,17 @@
 .appreaciate{
+    display: inline-block;
     padding: 5px 10px;
     border-bottom: 2px solid rgba(20, 20, 20, 0.9);
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 30px;
+}
+
+.appreaciatep{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .wallbox{

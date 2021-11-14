@@ -85,7 +85,6 @@
     }
 
     .Serviceban .card{
-        margin: 20px 0;
         height: 300px;
     }
 
@@ -94,6 +93,6 @@
     }
 
     .Serviceban .card .cardname p{
-        font-size: 15px;
+        font-size: 10px;
     }
 }
