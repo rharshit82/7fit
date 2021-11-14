@@ -9,6 +9,7 @@ import ImageScreen from './screens/ImageScreen/ImageScreen';
 import BlogScreen from './screens/BlogScreen/BlogScreen';
 import AddPostScreen from './screens/AddPostScreen/AddPostScreen';
 import ChallengeYourFriend from "./screens/ChallengeYourFriend/ChallengeYourFriend";
+import WorkoutMotivation from "./screens/WorkoutMotivation/WorkoutMotivation";
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
             <Route exact path='/addpost' component={() => <AddPostScreen />} />
             <Route exact path='/blog' component={() => <BlogScreen />} />     
             <Route exact path='/challenge' component={() => <ChallengeYourFriend />} />     
+            <Route exact path='/motivation' component={() => <WorkoutMotivation />} />     
 
           </Switch>
         </main>
